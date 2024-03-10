@@ -26,6 +26,7 @@ app.get("/:shortId", async (req, res) => {
                     }
                 }
             });
+            console.log("updated Url added",updatedUrl)
             if(updatedUrl){
                 return res.redirect(updatedUrl.redirectUrl);
             }
